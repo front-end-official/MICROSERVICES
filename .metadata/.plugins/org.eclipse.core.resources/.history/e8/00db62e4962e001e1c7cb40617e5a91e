@@ -1,0 +1,5 @@
+package com.employee.jparepo;
+
+public interface EmployeeRepo {
+
+}

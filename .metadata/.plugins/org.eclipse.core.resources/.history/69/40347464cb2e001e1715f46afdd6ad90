@@ -1,0 +1,24 @@
+# Database connection properties
+server:
+  port: 9092
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:ORCL   # Replace 'localhost' and '1521' with your Oracle server details
+    username: c##eneesha                    # Replace 'your_username' with your Oracle database username
+    password: eneesha                    # Replace 'your_password' with your Oracle database password
+    driver-class-name: oracle.jdbc.OracleDriver
+
+# Additional Oracle-specific properties
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://EUREKA-SERVER:8761/eureka/
+  instance:
+    hostname: localhost

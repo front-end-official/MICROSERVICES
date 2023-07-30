@@ -1,0 +1,10 @@
+1690696893745	Rename package 'com.employee.controller'
+1690696918313	Rename package 'com.employee.jparepo'
+1690696953570	Rename package 'com.employee.service'
+1690697000175	Rename package 'com.employee.model'
+1690697021392	Rename package 'com.employee.service.impl'
+1690697034870	Delete element
+1690697104610	Rename type 'EmployeeRepo'
+1690697465232	Rename type 'EmployeeController'
+1690697493352	Rename type 'EmployeeServiceI'
+1690697507238	Rename type 'EmpServiceImpl'

@@ -1,0 +1,11 @@
+package com.address.service;
+
+import java.util.List;
+
+import com.address.model.Address;
+
+public interface EmployeeServiceI {
+	Address addEmployee(Address employee);
+	List<Address> employeeList();
+	Address viewOneEmployee(Integer empId);
+}

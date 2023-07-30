@@ -1,0 +1,7 @@
+# Basic Spring Boot Config for Oracle on localhost
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:ORCL
+spring.datasource.username=c##eneesha
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+
+# Hibernate config
+spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect

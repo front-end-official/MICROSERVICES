@@ -1,0 +1,42 @@
+package com.address.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.address.jparepo.AddressRepo;
+import com.address.model.Address;
+import com.address.service.AddressServiceI;
+
+@Service
+public class AddressServiceImpl implements AddressServiceI{
+	@Autowired
+	AddressRepo addressRepo;
+	
+	@Override
+	public Address addEmployee(Address employee) {
+
+		return addressRepo.save(employee);
+	}
+
+	@Override
+	public List<Address> employeeList() {
+		// TODO Auto-generated method stub
+		return addressRepo.findAll();
+	}
+
+	@Override
+	public Address viewOneEmployee(Integer empId) {
+		Optional<Address> optional = addressRepo.findById(empId);
+		return optional.get();
+	}
+
+	@Override
+	public List<Address> userAddressLis(Integer empId) {
+		// TODO Auto-generated method stub
+		return addressRepo.findbyEmpId(empId);
+	}
+
+}

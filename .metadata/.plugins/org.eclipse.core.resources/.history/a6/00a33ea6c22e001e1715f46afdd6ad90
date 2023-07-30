@@ -1,0 +1,12 @@
+# Database connection properties
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:ORCL   # Replace 'localhost' and '1521' with your Oracle server details
+    username: c##eneesha                    # Replace 'your_username' with your Oracle database username
+    password: eneesha                    # Replace 'your_password' with your Oracle database password
+    driver-class-name: oracle.jdbc.OracleDriver
+
+# Additional Oracle-specific properties
+
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
